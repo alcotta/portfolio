@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio | Amanda Alcott-Herr | Web Developer </title>
+    <meta content="A collection of photography" name="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <link rel="stylesheet" href="portfolio2.css">
+    <script src="modernizr.custom.03312021.js"></script>
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="nav-top">
+    <div class="dropdown white wide padding card">
+    <button onclick="dropDown()" class="dropbtn"><b>AH</b>Amanda Alcott-Herr</button>
+    <div id="dropNav" class="dropdown-content">
+      <a href="index2.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="Travels.html">Travels</a>
+      <a href="webSecurity.html">Web Security Information</a>
+    </div>
+    </div> 
+  <div class="bar white wide padding card">
+    <!--<a href="index2.html" class="bar-item button"><b>AH</b> Amanda Alcott-Herr</a>-->
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="right hide-small">
+      <a href="index2.html" class="bar-item button">Portfolio</a>  
+      <a href="about.html" class="bar-item button">About</a>
+      <a href="contact.html" class="bar-item button">Contact</a>
+      <a href="Travels.html" class="bar-item button">Travels</a>
+      <a href="webSecurity.html" class="bar-item button">Web Security Information</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="display-container content wide" style="max-width:1500px;" id="home">
+  <img class="mainImage" src="IMG_1097.jpg" alt="July at the farm" width="1500" height="800">
+  <div class="middle-display margin-top center">
+    <h1 class="xxlarge white-text"><span class="padding black-padding opactity-min"><b>AH</b></span> <span class="hide-small lightgrey-text">Amanda Alcott-Herr</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="content padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="container padding-32" id="projects">
+    <h3 class="border-bottom lightgrey-border padding-16">Places</h3>
+  </div>
+  <div class="row-padding">
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <div class="topleft-display black-padding padding">Farmland</div>
+        <!--<img src="" alt="House" style="width:100%">-->
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <div class="topleft-display black-padding padding">Music</div>
+        <!--<img src="" alt="House" style="width:100%">-->
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <div class="topleft-display black-padding padding">The Bay</div>
+        <!--<img src="" alt="House" style="width:100%">-->
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <div class="topleft-display black-padding padding">Other</div>
+        <!--<img src="" alt="House" style="width:100%">-->
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>  
+<!--Travel Counter-->
+  <div class="container padding-32">
+      <article>
+         <h3 class="border-bottom lightgrey-border padding-16">Oh the places you have gone</h3>
+         <p>This past year has been tough for those who love to travel, as a reminder to ourselves,<br>
+         of the places we have already been, fill in the form below to see all the places you have been.<br>
+         Fill in a future vacation date to start a countdown!
+         </p>
+         
+         <form id="placesTraveledForm">
+            <fieldset>
+               <legend><span><h4>Places Traveled</h4></span></legend>
+               <input class="input p-section p-border" type="number" min="1" max="195" id="countries" value="1" />
+               <label for="countries">
+                  <p># of countries visited (1&#8209;195)</p>
+               </label>
+
+               <input class="input p-section p-border"  type="number" min="1" id="states" value="1" />
+               <label for="states">
+                  <p># states, territories, or provinces visited </p>
+               </label>
+
+               <input class="input p-section p-border"  type="number" min="1" id="cities" value="1" />
+               <label for="cities">
+                  <p># cities, hamlets, or towns visited </p>
+               </label>
+            <p>Number of Places Traveled To: 
+              <span id="placesTraveled"></span>
+            </p>
+            </fieldset>
+          <fieldset class="checks">
+            <legend><span>What's your favorite vacation spot?</span></legend>
+            <input type="checkbox" id="beach" value="The Beach" name="locations" />
+            <label for="beach" id="beachLabel">The Beach</label>
+            <input type="checkbox" id="mountains" value="The Mountians" name="locations" />
+            <label for="mountains" id="mountainsLabel">The Mountains</label>
+            <input type="checkbox" id="rainforest" value="The Rainforest" name="locations" />
+            <label for="rainforest" id="rainforestLabel">The Rainforest</label>
+            <input type="checkbox" id="city" value="The City" name="locations" />
+            <label for="city" id="cityLabel">The City</label>
+            <input type="checkbox" id="cruise" value="A Cruise" name="locations" />
+            <label for="cruise" id="cruiseLabel">A Cruise</label>
+            <input type="checkbox" id="lake" value="A Lake" name="locations" />
+            <label for="lake" id="lakeLabel">A Lake </label>
+            <input type="checkbox" id="musicfest" value="A Music Festival" name="locations" />
+            <label for="musicfest" id="musicLabel">A Music Festival</label>
+            <input type="checkbox" id="ecotour" value="Eco Tourism" name="locations" />
+            <label for="ecotour" id="ecoLabel">Eco Tourism</label>
+          
+          <section id="vacationSpot">
+            <h4>Favorite Vacation Spots</h4>
+              <div id="locationSection">
+                <ul id="spotLocations"></ul>
+              </div>
+          </section>
+          </fieldset>      
+        <aside>
+          <fieldset>
+            <legend>Vacation Date</legend>
+            <input type="text" id="tripDate" />
+         
+          <div id="countdownSection">
+            <p id="countdown"><h4>Countdown to Vacation</h4></p>
+          </div>  
+        </aside>   
+         <div id="cal">
+         <div id="prev">&lt; previous</div>
+         <div id="next">next &gt;</div>
+         <table>
+            <caption></caption>
+            <tr>
+               <th>Sun</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+               <th>Sat</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+         <p id="close">close <span>&#9746;</span></p>
+         </fieldset> 
+        </div>
+      </fieldset>
+    </form>
+  </article>
+</div>
+<!--Add calendar to form to start vacay countdown-->
+
+
+
+<!--Random Page generation-->
+<div class= "container">
+ <p id="nature">Click here for a 50/50 chance of seeing a different site that I've created</p>
+</div>
+<!-- Bottom Image -->
+<div class="container">
+  <img src="IMG_1202.JPG" class="mainImage" style="width:100%">
+</div>
+
+<!-- Footer -->
+<footer class="center black-padding padding-16">
+  <p><a title="AH" target="_blank" class="hover-green">AH.com</a></p>
+</footer>
+
+<script src="travel.js">
+</script>
+<script src="dropdown.js"></script>
+</body>
+</html>

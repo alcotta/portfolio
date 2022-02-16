@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio | Amanda Alcott-Herr | Web Developer </title>
+    <meta content="Amanda Alcott-Herr is a freelance Web Developer, based in East Central Indiana. 
+    She approaches web design through an inventive and unique lens." name="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <link rel="stylesheet" href="portfolio2.css">
+    <script src="modernizr.custom.03312021.js"></script>
+</head>
+
+<body>
+<!-- Navbar (sit on top) CREATE drop down menu to access travel page from mobile view -->
+<div class="nav-top">
+    <div class="dropdown white wide padding card">
+    <button onclick="dropDown()" class="dropbtn"><b>AH</b>Amanda Alcott-Herr</button>
+    <div id="dropNav" class="dropdown-content">
+      <a href="index2.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="Travels.html">Travels</a>
+      <a href="webSecurity.html">Web Security Information</a>
+    </div>
+    </div> 
+  <div class="bar white wide padding card">
+    <!--<a href="index2.html" class="bar-item button"><b>AH</b> Amanda Alcott-Herr</a>-->
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="right hide-small">
+      <a href="index2.html" class="bar-item button">Portfolio</a>  
+      <a href="about.html" class="bar-item button">About</a>
+      <a href="contact.html" class="bar-item button">Contact</a>
+      <a href="Travels.html" class="bar-item button">Travels</a>
+      <a href="webSecurity.html" class="bar-item button">Web Security Information</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="display-container content wide" style="max-width:1500px;" id="home">
+  <img class="mainImage" src="IMG_1097.jpg" alt="July at the farm" width="1500" height="800">
+  <div class="middle-display margin-top center">
+    <h1 class="xxlarge white-text"><span class="padding black-padding opactity-min"><b>AH</b></span> <span class="hide-small lightgrey-text">Amanda Alcott-Herr</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="content padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="container padding-32" id="projects">
+    <h3 class="border-bottom lightgrey-border padding-16">Projects</h3>
+  </div>
+
+  <div class="row-padding">
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <button class="topleft-display black-padding padding button"><a href='https://codepen.io/alcotta/full/MWyqGyQ'>Tribute Page</a></button>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <button class="topleft-display black-padding padding button"><a href='https://codepen.io/alcotta/full/BaKGvNX'>Google Mock Page</a></button>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <button class="topleft-display black-padding padding button"><a href='https://aalcottherrsdev153.s3.amazonaws.com/finalProject/WebDevFinal/index.html'>The Phriendly Food & Drink Spot</a></button>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="display-container">
+        <button class="topleft-display black-padding padding button"><a href='https://codepen.io/alcotta/full/YzWWgyR'>Rock, Paper, Scissors Game</a></button>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<!-- Bottom Image -->
+<div class="container">
+  <img id="loveBirds" src="IMG_1202.JPG" alt="lovebirds" class="mainImage" style="width:100%">
+</div>
+
+<!-- Footer -->
+<footer class="center black-padding padding-16">
+  <p><a href=" " title="AH" target="_blank" class="hover-green">AH.com</a></p>
+</footer>
+
+<script src="dropdown.js"></script>
+</body>
+</html>
